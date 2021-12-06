@@ -8,8 +8,6 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(assets/images/839f1a560e5553a1d8a4fb6f8855a853.jpg);
-    background-size: cover;
 }
 
 .loading{
