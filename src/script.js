@@ -24,7 +24,7 @@ import { hidePlanetinfo, showPlanetinfo } from "./ui-planetinfo";
   var orbitSpeed = .000005;
   var rotationSpeed = .0025;
   var speedFactor = 0.001;
-  const finalSpeedFactor = 0;
+  const finalSpeedFactor = 0.32;
   var newSpeedFactor = speedFactor;
 
   initUI(finalSpeedFactor, onSlider, onToggle);
