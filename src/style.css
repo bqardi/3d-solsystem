@@ -1,20 +1,173 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
 html,
-body
-{
+body {
     height: 100vh;
-    font-family: 'Poppins';
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("./images/universe.jpg");
+    background-size: cover;
 }
 
-.webgl
-{
+.loading{
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s, visibility 1.5s;
+}
+.loading--progress{
+    opacity: 1;
+    visibility: visible;
+}
+.loading__bar{
+    height: 20px;
+    width: 240px;
+    max-width: 80vw;
+    margin: 20px 0 10px;
+    background-color: rgba(172, 255, 47, 0.15);
+}
+.loading__metre{
+    height: 100%;
+    width: 0%;
+    background-color: greenyellow;
+}
+.loading__progress{
+    font-size: 0.9rem;
+}
+
+.webgl {
     position: fixed;
     top: 0;
     left: 0;
     outline: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider{
+    position: relative;
+    z-index: 1;
+    padding: 35px 50px 0 0;
+    color: white;
+    transform: translateY(-100%);
+    transition: .8s;
+}
+.slider--show{
+    transform: translateY(0);
+}
+.slider__heading{
+    margin-bottom: 16px;
+}
+.slider__container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8px;
+}
+.slider__value{
+    font-family: monospace;
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #4dafff;
+}
+.slider__range{
+    width: 100%;
+}
+.slider__amount{
+    margin: 0 20px 0 0;
+    white-space: nowrap;
+}
+
+.helptext{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    transform: translateY(100%);
+    transition: .8s;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+.helptext--show{
+    transform: translateY(0);
+}
+.helptext__txt{
+    margin: 20px;
+}
+
+.header{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    pointer-events: none;
+    user-select: none;
+    padding: 16px 50px 0;
+}
+.header h1{
+    font-size: 4rem;
+    margin: 0 0 4px;
+}
+.header p{
+    font-size: 1.5rem;
+    margin: 0;
+    color: lightgray;
+}
+
+.planetinfo{
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 400px;
+    max-width: 30vw;
+    min-height: 50vh;
+    padding: 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+.planetinfo--display{
+    opacity: 1;
+    visibility: visible;
+}
+.planetinfo__heading{
+    font-size: 1.8rem;
+}
+.planetinfo__list{
+    margin: 10px 0;
+    list-style: none;
+}
+.planetinfo__item{
+    font-weight: 300;
+}
+.planetinfo__data{
+    font-weight: 500;
 }
