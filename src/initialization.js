@@ -17,7 +17,7 @@ export default function init(){
   renderer.setSize(sizes.width, sizes.height);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-  const skybox = createSkybox("/textures/universe.jpg");
+  const skybox = createSkybox("./textures/universe.jpg");
   skybox.rotation.y = 2.8;
   scene.add(skybox);
 
@@ -26,7 +26,7 @@ export default function init(){
   
   earth.orbit.rotation.y = planetSettings.earth.startYPos;
 
-  const saturnRing = createCircle("/textures/saturn_ring_alpha.png", 2.2, 64);
+  const saturnRing = createCircle("./textures/saturn_ring_alpha.png", 2.2, 64);
   saturnRing.rotation.set(Math.PI / 2, 0, 0);
   saturn.mesh.add(saturnRing);
   

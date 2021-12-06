@@ -2,7 +2,7 @@ const planetSettings = {
 	sun: {
 		scale: 9,
 		offset: 0,
-		texture: "/textures/sun.jpg",
+		texture: "./textures/sun.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -23,7 +23,7 @@ const planetSettings = {
 	mercury: {
 		scale: 1,
 		offset: 15,
-		texture: "/textures/mercury.jpg",
+		texture: "./textures/mercury.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -44,7 +44,7 @@ const planetSettings = {
 	venus: {
 		scale: 2.8,
 		offset: 22,
-		texture: "/textures/venus.jpg",
+		texture: "./textures/venus.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -65,11 +65,11 @@ const planetSettings = {
 	earth: {
 		scale: 3,
 		offset: 31,
-		texture: "/textures/earth.jpg",
+		texture: "./textures/earth.jpg",
 		normalMap: null,
-		bumpMap: "/textures/earth_bump_map.jpg",
+		bumpMap: "./textures/earth_bump_map.jpg",
 		alphaMap: null,
-		specularMap: "/textures/earth_specular_map.jpg",
+		specularMap: "./textures/earth_specular_map.jpg",
 		emissive: 0x000000,
 		startYPos: 0,
 		speed: {
@@ -86,7 +86,7 @@ const planetSettings = {
 	moon: {
 		scale: 0.5,
 		offset: 5,
-		texture: "/textures/moon.jpg",
+		texture: "./textures/moon.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -107,7 +107,7 @@ const planetSettings = {
 	mars: {
 		scale: 2,
 		offset: 40,
-		texture: "/textures/mars.jpg",
+		texture: "./textures/mars.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -128,7 +128,7 @@ const planetSettings = {
 	jupiter: {
 		scale: 8,
 		offset: 53,
-		texture: "/textures/jupiter.jpg",
+		texture: "./textures/jupiter.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -149,7 +149,7 @@ const planetSettings = {
 	saturn: {
 		scale: 3,
 		offset: 69,
-		texture: "/textures/saturn.jpg",
+		texture: "./textures/saturn.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -170,7 +170,7 @@ const planetSettings = {
 	uranus: {
 		scale: 2.8,
 		offset: 79,
-		texture: "/textures/uranus.jpg",
+		texture: "./textures/uranus.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
@@ -191,7 +191,7 @@ const planetSettings = {
 	neptune: {
 		scale: 5,
 		offset: 88,
-		texture: "/textures/neptune.jpg",
+		texture: "./textures/neptune.jpg",
 		normalMap: null,
 		bumpMap: null,
 		alphaMap: null,
