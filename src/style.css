@@ -18,10 +18,9 @@ body {
     z-index: 2;
     background-color: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-image: url("./images/saturn.jpg");
+    background-size: cover;
+    background-position: 50% 0;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1.5s, visibility 1.5s;
@@ -29,6 +28,17 @@ body {
 .loading--progress{
     opacity: 1;
     visibility: visible;
+}
+.loading__content{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    min-width: 320px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .loading__bar{
     height: 20px;

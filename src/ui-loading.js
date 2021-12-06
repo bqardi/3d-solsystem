@@ -3,7 +3,7 @@ const loadingMetre = document.querySelector(".loading__metre");
 const loadingProgress = document.querySelector(".loading__progress");
 
 export function onFinishedLoading(){
-	loading.classList.remove("loading--progress");
+	// loading.classList.remove("loading--progress");
 }
 
 export function onProgress(url, itemsLoaded, itemsTotal) {
