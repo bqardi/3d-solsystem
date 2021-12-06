@@ -8,8 +8,6 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
-    background-image: url("./images/universe.jpg");
-    background-size: cover;
 }
 
 .loading{
